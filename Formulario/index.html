@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Construtor de Formulários Dinâmicos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Elementos de Fomulários</h2>
+            <div class="draggable" draggable="true" data-type="text">
+                <label>Campo de Texto</label>
+                <input type="text" placeholder="Texto">
+            </div>
+            <div class="draggable" draggable="true" data-type="email">
+                <label>Campo de E-mail</label>
+                <input type="email" placeholder="email@exemplo.com">
+            </div>
+            <div class="draggable" draggable="true" data-type="password">
+                <label>Campo de Senha</label>
+                <input type="password" placeholder="Senha">
+            </div>
+            <div class="draggable" draggable="true" data-type="number">
+                <label>Campo Numérico</label>
+                <input type="number" placeholder="Número">
+            </div>
+            <div class="draggable" draggable="true" data-type="select">
+                <label>Campo de Seleção</label>
+                <select>
+                    <option value="">Selecione uma opção</option>
+                    <option value="opcao1">Opção 1</option>
+                </select>
+            </div>
+            <div class="draggable" draggable="true" data-type="checkbox">
+                <label>Caixa de Checagem</label>
+                <input type="checkbox">
+            </div>
+            <div class="draggable" draggable="true" data-type="radio">
+                <label>Botão de Rádio</label>
+                <div>
+                    <input type="radio" name="radio-group" value="opcaoA">
+                    Opção A
+                </div>
+                <div>
+                    <input type="radio" name="radio-group" value="opcaoB">
+                    Opção B
+                </div>
+            </div>
+            <div class="draggable" draggable="true" data-type="textarea">
+                <label>Área de Texto</label>
+                <textarea placeholder="Sua mensagem"></textarea>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Arraste e Solte Campos Aqui</h1>
+            <div class="drop-zone" id="form-builder"></div>
+            <button id="generate-html">Gerar HTML</button>
+            <textarea id="generate-html-output" readonly placeholder="O HTML gerado aparecerá aqui..."></textarea>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
