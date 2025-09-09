@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador Financeiro Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organizador Financeiro Pessoal</h1>
+        <section class="balance-summary">
+            <h2>Saldo Atual: <span id="current-balance">R$ 0,00</span></h2>
+        </section>
+        <section class="transaction-form">
+            <h2>Adicionar Nova Transação</h2>
+            <form id="transaction-form">
+                <div class="form-group">
+                    <label for="description">Descrição:</label>
+                    <input type="text" id="description" 
+                    required placeholder="Ex: Conta de Luz, Salário">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Valor:</label>
+                    <input type="number" id="amount" step="0.01"
+                    required placeholder="Ex: 50.00 (despesa), 200.00
+                    (receita)">
+                </div>
+                <div class="form-group">
+                    <label for="type">Tipo:</label>
+                    <select id="type" required>
+                        <option value="expense">Despesa</option>
+                        <option value="income">Receita</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="category">Categoria: </label>
+                    <select id="category" required>
+                        <option value="Selecione uma categoria"></option>
+                    </select>
+                    <button type="button" id="add-category-btn"
+                    class="secondary-btn">Adicionar Categoria</button>
+                </div>
+                <button type="submit">Adicionar Transação</button>
+                </form>
+        </section>
+        <section class="transactions-list">
+            <h2>Histórico de Transações</h2>
+            <ul id="transactions-list">
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
