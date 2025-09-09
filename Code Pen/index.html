@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor HTML/CSS Ao Vivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editor HTML/CSS Ao Vivo</h1>
+        <div class="editor-painel">
+            <div class="code-editor">
+                <div class="editor-header">
+                    <h2>HTML</h2>
+                </div>
+                <textarea id="html-editor" spellcheck="false">
+<div class="box">Olá, Editor!</div>
+<p>Este é um parágrafo de teste</p>
+                </textarea>
+            </div>
+            <div class="code-editor">
+                <div class="editor-header">
+                    <h2>CSS</h2>
+                </div>
+                <textarea id="css-editor" spellcheck="false">
+/* Digite seu CSS aqui */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+p {
+    margin-top: 20px;
+    color: #555;
+    font-size: 1.1em;
+    text-align: center;
+}
+                </textarea>
+            </div>
+        </div>
+        <div class="preview-painel">
+            <div class="editor-header">
+                <h2>Preview</h2>
+            </div>
+            <iframe id="preview-iframe" title="Live Preview"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
