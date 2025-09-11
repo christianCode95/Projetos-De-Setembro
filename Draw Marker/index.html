@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="container">
+        <h1>Aplicativo de Desenho em Canvas</h1>
+        <div class="controls">
+            <div class="tool-group">
+                <button id="tool-pen" class="tool-button active" data-tool="pen">Caneta</button>
+                <button id="tool-eraser" class="tool-button" data-tool="eraser">Borracha</button>
+            </div>
+            <div class="tool-group">
+                <button id="tool-rectangle" class="tool-button" data-tool="rectangle">Retângulo</button>
+                <button id="tool-circle" class="tool-button" data-tool="circle">Circulo</button>
+                <button id="tool-line" class="tool-button" data-tool="line">Linha</button>
+            </div>
+            <div class="tool-group">
+                <label for="color-picker">Cor:</label>
+                <input type="color" id="color-picker" value="#000000">
+            </div>
+            <div class="tool-group">
+                <label for="line-width">Espessura:</label>
+                <input type="range" id="line-width" min="1" max="50" value="5">
+                <span id="line-width-value">5px</span>
+            </div>
+            <div class="tool-group">
+                <button id="clear-canvas" class="action-button">Limpar Tudo</button>
+                <button id="save-image" class="action-button">Salvar Imagem</button>
+            </div>
+        </div>
+        <canvas id="drawing-canvas"></canvas>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
