@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Ações em Tempo Real</h1>
+        <div class="stock-info">
+            <h2 id="stock-name">Ação Simulada (SIMU)</h2>
+            <div class="price-display">
+                Valor Atual: <span id="current-price">R$ 0.00</span>
+                <span id="price-change" class="change-neutral">(+0.00%)</span>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="stockChart"></canvas>
+        </div>
+        <div class="controls">
+            <button id="start-simulation-btn" class="button primary">Iniciar Simulação</button>
+            <button id="stop-simulation-btn" class="button">Parar Simulação</button>
+            <button id="reset-chart-btn" class="button">Redefinir Gráfico</button>
+        </div>
+        <div class="footer-info">
+            <p>Este é um simulador. Os dados não são reais e não represetam o desempenho de mercado</p>
+        </div>
+    </div> 
+    <script src='script.js'></script>
+</body>
+</html>
