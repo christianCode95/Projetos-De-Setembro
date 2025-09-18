@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simulador de Produção de Itens</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fábrica de Itens</h1>
+        <div class="item-display">
+            <p>Itens: <span id="item-count">0</span></p>
+            <p>Itens por segundo <span id="ips-count">0</span></p>
+        </div>
+        <button id="produce-button" class="action-button">
+            Produzir Item (1 por clique)</button>
+        <div class="upgrades-section">
+            <h2>Melhorias</h2>
+            <div id="upgrades-list">
+            </div>
+        </div>
+        <div class="game-actions">
+            <button id="save-game" class="utility-button">Salvar Jogo</button>
+            <button id="load-game" class="utility-button">Carregar Jogo</button>
+            <button id="reset-game" class="utility-button reset">Reiniciar Jogo</button>
+        </div>
+        <div id="message-box" class="message-box">
+            <p id="message-text"></p>
+            <button id="close-message" class="action-button">OK</button>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
