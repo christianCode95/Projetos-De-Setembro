@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cce0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#interface{
+    text-align: center;
+}
+#header{
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#sim-time{
+    font-size: 18px;
+}
+canvas{
+    border: 2px solid #333;
+    background-color: #eef;
+}
